@@ -42,7 +42,7 @@ function Event(props) {
     if (onSize) {
       onSize({width, height});
     }
-  });
+  }, []);
 
   return <li ref={ref} className={'event' + (props.slim ? ' event_slim' : '')}>
     <button className="event__button">
@@ -55,7 +55,2298 @@ function Event(props) {
   </li>;
 }
 
-const TABS = {"all":{"title":"Все","items":[{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"}]},"kitchen":{"title":"Кухня","items":[{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Yeelight LED Smart Bulb","subtitle":"Включено"},{"icon":"temp","iconLabel":"Температура","title":"Elgato Eve Degree Connected","subtitle":"Выключено до 17:00"}]},"hall":{"title":"Зал","items":[{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Выключено"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Выключено"}]},"lights":{"title":"Лампочки","items":[{"icon":"light","iconLabel":"Освещение","title":"D-Link Omna 180 Cam","subtitle":"Включится в 17:00"},{"icon":"light","iconLabel":"Освещение","title":"LIFX Mini Day & Dusk A60 E27","subtitle":"Включится в 17:00"},{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"},{"icon":"light","iconLabel":"Освещение","title":"Philips Zhirui","subtitle":"Включено"}]},"cameras":{"title":"Камеры","items":[{"icon":"light2","iconLabel":"Освещение","title":"Xiaomi Mi Air Purifier 2S","subtitle":"Включено"}]}}
+const TABS = {
+  "all": {
+    "title": "Все",
+    "items": [{
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Включено"
+    }, {"icon": "light2", "iconLabel": "Освещение", "title": "Xiaomi Mi Air Purifier 2S", "subtitle": "Включено"}]
+  },
+  "kitchen": {
+    "title": "Кухня",
+    "items": [{
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Yeelight LED Smart Bulb",
+      "subtitle": "Включено"
+    }, {
+      "icon": "temp",
+      "iconLabel": "Температура",
+      "title": "Elgato Eve Degree Connected",
+      "subtitle": "Выключено до 17:00"
+    }]
+  },
+  "hall": {
+    "title": "Зал",
+    "items": [{
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "Philips Zhirui",
+      "subtitle": "Выключено"
+    }, {"icon": "light2", "iconLabel": "Освещение", "title": "Xiaomi Mi Air Purifier 2S", "subtitle": "Выключено"}]
+  },
+  "lights": {
+    "title": "Лампочки",
+    "items": [{
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "D-Link Omna 180 Cam",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light",
+      "iconLabel": "Освещение",
+      "title": "LIFX Mini Day & Dusk A60 E27",
+      "subtitle": "Включится в 17:00"
+    }, {
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }, {"icon": "light", "iconLabel": "Освещение", "title": "Philips Zhirui", "subtitle": "Включено"}]
+  },
+  "cameras": {
+    "title": "Камеры",
+    "items": [{
+      "icon": "light2",
+      "iconLabel": "Освещение",
+      "title": "Xiaomi Mi Air Purifier 2S",
+      "subtitle": "Включено"
+    }]
+  }
+}
 const TABS_KEYS = Object.keys(TABS);
 
 function Main() {
@@ -103,6 +2394,16 @@ function Main() {
     <section className="section main__general">
       <h2 className="section__title section__title-header section__main-title">Главное</h2>
       <div className="hero-dashboard">
+        <img
+            alt="lcp"
+            className="lcp-img"
+            src="assets/bg@2x.png"
+            fetchpriority="high"
+            decoding="async"
+            loading="eager"
+            width="1260"
+            height="662"
+        />
         <div className="hero-dashboard__primary">
           <h3 className="hero-dashboard__title">Привет, Геннадий!</h3>
           <p className="hero-dashboard__subtitle">Двери и окна закрыты, сигнализация включена.</p>
@@ -182,7 +2483,7 @@ function Main() {
             subtitle="Начнётся в 18:00"
         />
         <Event
-            slim={true}
+            slim
             icon="temp2"
             iconLabel="Температура"
             title="Сделать пол тёплым во всей квартире"
