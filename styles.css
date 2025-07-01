@@ -302,7 +302,6 @@ html, body {
 }
 
 .hero-dashboard__title {
-    background-image: url("/dashboard.png");
     margin: 0.375rem 0;
     font-size: 1.6875rem;
     font-weight: bold;
