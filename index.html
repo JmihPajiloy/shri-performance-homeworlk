@@ -71,7 +71,7 @@
     </header>;
   }
 
-  function Event(props) {
+  const Event = React.memo((props) => {
     const ref = React.useRef();
 
     const {onSize} = props;
@@ -93,7 +93,7 @@
         }
       </button>
     </li>;
-  }
+  });
 
   const TABS = {
     "all": {
