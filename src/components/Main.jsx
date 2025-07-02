@@ -2337,8 +2337,6 @@ export function Main() {
   };
 
   return <>
-
-
     <section className="section main__devices">
       <div className="section__title">
         <h2 className="section__title-header">

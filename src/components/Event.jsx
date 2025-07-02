@@ -16,7 +16,11 @@ export const Event = React.memo((props) => {
 
   return <li ref={ref} className={'event' + (props.slim ? ' event_slim' : '')}>
     <button className="event__button">
-      <span className={`event__icon event__icon_${props.icon}`} role="img" aria-label={props.iconLabel}></span>
+      <span className={`event__icon event__icon_${props.icon}`} role="img" aria-label={props.iconLabel}>
+          <svg width="24" height="24">
+    <use href={`#${props.icon}`}/>
+  </svg>
+      </span>
       <h4 className="event__title">{props.title}</h4>
       {props.subtitle &&
           <span className="event__subtitle">{props.subtitle}</span>
@@ -28,7 +32,11 @@ export const Event = React.memo((props) => {
 export const StaticEvent = React.memo((props) => (
     <li className={'event' + (props.slim ? ' event_slim' : '')}>
       <button className="event__button">
-        <span className={`event__icon event__icon_${props.icon}`} role="img" aria-label={props.iconLabel}></span>
+        <span className={`event__icon event__icon_${props.icon}`} role="img" aria-label={props.iconLabel}>
+          <svg width="24" height="24">
+    <use href={`#${props.icon}`}/>
+  </svg>
+        </span>
         <h4 className="event__title">{props.title}</h4>
         {props.subtitle &&
             <span className="event__subtitle">{props.subtitle}</span>
