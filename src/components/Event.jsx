@@ -1,12 +1,12 @@
-import React from "react";
+import {memo, useEffect, useRef} from "react";
 
 
-export const Event = React.memo((props) => {
-  const ref = React.useRef();
+export const Event = memo((props) => {
+  const ref = useRef();
 
   const {onSize} = props;
 
-  React.useEffect(() => {
+  useEffect(() => {
     const width = ref.current.offsetWidth;
     const height = ref.current.offsetHeight;
     if (onSize) {
