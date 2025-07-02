@@ -32,7 +32,7 @@ export const Event = React.memo((props) => {
 export const StaticEvent = React.memo((props) => (
     <li className={'event' + (props.slim ? ' event_slim' : '')}>
       <button className="event__button">
-        <span className={`event__icon event__icon_${props.icon}`} role="img" aria-label={props.iconLabel}>
+        <span className="event__icon" role="img" aria-label={props.iconLabel}>
           <svg width="24" height="24">
     <use href={`#${props.icon}`}/>
   </svg>
