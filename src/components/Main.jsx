@@ -2335,9 +2335,7 @@ export function Main() {
       });
     }
   };
-
   return <>
-    <section className="section main__devices">
       <div className="section__title">
         <h2 className="section__title-header">
           Избранные устройства
@@ -2389,6 +2387,5 @@ export function Main() {
             <div className="section__arrow" onClick={onArrowCLick}></div>
         }
       </div>
-    </section>
-  </>;
+    </>
 }

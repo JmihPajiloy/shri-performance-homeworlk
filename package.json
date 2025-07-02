@@ -4,7 +4,6 @@
   "description": "Оптимизировать страницу, выложить результат на Github-Pages и отправить его на проверку на [https://shri-performance.ru/](https://shri-performance.ru/), отправив адрес вашей страницы. Нужно набрать минимум **80 баллов**. Набрать больше баллов возможно, но больше 120 в зачёт не пойдёт.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
