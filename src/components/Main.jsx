@@ -2306,7 +2306,7 @@ export function Main() {
       initedRef.current = true;
       setActiveTab(new URLSearchParams(location.search).get('tab') || 'all');
     }
-  });
+  }, [activeTab, initedRef]);
 
   const onSelectInput = event => {
     setActiveTab(event.target.value);
@@ -2314,7 +2314,7 @@ export function Main() {
 
   let sizes = [];
   const onSize = size => {
-    sizes = [...sizes, size];
+    sizes.push(size);
   };
 
   useEffect(() => {
@@ -2324,7 +2324,7 @@ export function Main() {
     if (newHasRightScroll !== hasRightScroll) {
       setHasRightScroll(newHasRightScroll);
     }
-  });
+  }, [activeTab]);
 
   const onArrowCLick = () => {
     const scroller = ref.current.querySelector('.section__panel:not(.section__panel_hidden)');
